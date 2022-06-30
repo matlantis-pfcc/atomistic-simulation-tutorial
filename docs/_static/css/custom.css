@@ -1,0 +1,34 @@
+.md-header-nav__button {
+	padding: 0;
+}
+
+.md-header-nav__button img {
+	width: 143px;
+	height: auto;
+	margin-top: 11px;
+}
+
+.md-header, .md-hero, .md-tabs {
+	background: rgb(6,27,43);
+	background: linear-gradient(90deg, rgba(6,27,43,1) 11%, rgba(19,45,65,1) 36%, rgba(2,13,28,1) 100%);
+}
+
+@media only screen and (max-width: 76.1875em) {
+	.md-nav--primary .md-nav__title--site {
+		background: rgba(2,13,28,1) !important;
+	}
+
+	.md-nav__source {
+		background: rgba(19,45,65,1) !important;
+	}
+}
+
+.md-header-nav__topic {
+	height: 57px;
+    font-size: 22px;
+    line-height: 57px;
+}
+
+.md-icon.md-icon--menu.md-header-nav__button {
+	margin-top: 17px;
+}

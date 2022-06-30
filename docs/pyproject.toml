@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "atomistic-simulation-tutorial"
+version = "0.1.0"
+description = ""
+authors = []
+
+[tool.poetry.dependencies]
+python = "^3.8"
+nbsphinx = "^0.8.8"
+Sphinx = "^4.5.0"
+pandoc = "^2.2"
+ipython = "^8.3.0"
+ipywidgets = "^7.7.0"
+sphinx-material = "^0.0.35"
+nbsphinx-link = "^1.3.0"
+flake8 = "^4.0.1"
+mypy = "^0.961"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
