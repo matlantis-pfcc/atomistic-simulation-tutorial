@@ -49,6 +49,13 @@ Atomistic Simulation Tutorial
    ./6_*
 
 .. toctree::
+   :caption: 7. おわりに
+   :maxdepth: 1
+   :glob:
+
+   ./7_*
+
+.. toctree::
    :caption: Appendix
    :maxdepth: 1
    :glob:
