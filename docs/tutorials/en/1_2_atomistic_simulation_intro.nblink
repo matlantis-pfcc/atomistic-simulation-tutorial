@@ -1,0 +1,7 @@
+{
+	"path": "../../../tutorials/en/1_2_atomistic_simulation_intro.ipynb",
+	"extra-media": [
+		"../../../tutorials/assets",
+		"../../../tutorials/en/output"
+	]
+}

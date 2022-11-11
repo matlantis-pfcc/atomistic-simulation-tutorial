@@ -1,20 +1,27 @@
 {% extends "!layout.html" %}
 
-{% block extrahead %}
-  <!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-W7Q4ZJV');</script>
-  <!-- End Google Tag Manager -->
+{% block htmltitle %}
   {{ super() }}
+  <!-- Workaround: need to import cookie-consent library before importing require.js -->
+  <script src="_static/js/cookie-consent.umd.js"></script>
+  <script src="_static/js/cookie-consent-init.umd.js"></script>
 {% endblock %}
 
 {% block relbar1 %}
-  <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7Q4ZJV"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  <script>
+    const cc = cookieConsentInit(cookieConsent)({
+      onChange(result) {
+        console.log(result);
+      },
+      gtmid: 'GTM-W7Q4ZJV',
+      consentCookieOptions: {
+        domain: "matlantis.com"
+      }
+    });
+
+    function showSettings() {
+      cc.$set({ settingsShown: true });
+    }
+  </script>
   {{ super()}}
 {% endblock %}
