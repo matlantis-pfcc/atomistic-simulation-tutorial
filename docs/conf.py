@@ -103,6 +103,7 @@ html_theme_options = {
 
 html_css_files = [
     'css/custom.css',
+    'css/cookie-consent.css',
 ]
 
 # Avoid to plotly error
