@@ -103,8 +103,10 @@ html_theme_options = {
 
 html_css_files = [
     'css/custom.css',
-    'css/cookie-consent.css',
+    'https://docs.matlantis.com/assets/css/cookie-consent.css',
 ]
+
+html_js_files = ['js/external-link.js']
 
 # Avoid to plotly error
 # See https://github.com/spatialaudio/nbsphinx/issues/572#issuecomment-853389268
