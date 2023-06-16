@@ -17,5 +17,6 @@ $ poetry install
 You can choose a language for build from `ja` or `en`.
 
 ```sh
+$ poetry run python misc/split_notebook.py
 $ poetry run make html -e LANG="ja"
 ```

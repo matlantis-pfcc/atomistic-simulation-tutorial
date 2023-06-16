@@ -32,3 +32,23 @@
 .md-icon.md-icon--menu.md-header-nav__button {
 	margin-top: 17px;
 }
+
+.nboutput .output_area .highlight pre {
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.md-typeset__table .head code.docutils{
+  background: #616161;
+  padding: 2px;
+  white-space: nowrap;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  color: rgba(0,0,0,.87);
+  font-weight: bold;
+}

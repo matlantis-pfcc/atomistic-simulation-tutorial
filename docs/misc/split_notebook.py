@@ -111,8 +111,8 @@ for f in file_names:
     )
 
 # Copy `output` directory
-shutil.copytree(tutorials_bilingual / "output", tutorials_jp / "output")
-shutil.copytree(tutorials_bilingual / "output", tutorials_en / "output")
+shutil.copytree(tutorials_bilingual / "output", tutorials_jp / "output", dirs_exist_ok=True)
+shutil.copytree(tutorials_bilingual / "output", tutorials_en / "output", dirs_exist_ok=True)
 
 if args.remove_bilingual_dir:
     shutil.rmtree(tutorials_bilingual)
